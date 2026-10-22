@@ -1,0 +1,204 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  transition: 0.3s;
+}
+body.night {
+  background-color: #222;
+  color: #eee;
+}
+/* ========== 头部样式header ========== */
+header.container-head {
+  background-color: #565252;
+  border: 0.8px solid burlywood; /*实线边框*/
+  padding: 10px 20px;
+  margin: 30px, auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+header.container-head nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+header.container-head h1,
+header.container-head a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header.container-head h1 {
+  margin-left: 10%;
+  margin-right: auto;
+}
+
+header.container-head .skin-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #565252;
+  color: white;
+}
+
+header.container-head .skin-btn:hover {
+  background-color: #706b6b;
+}
+
+header.article-content .skin-btn {
+  background-color: #565252;
+}
+
+.avatar-box {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatar-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ========== 主体区域main ========== */
+.container-layout {
+  max-width: 1000px;
+  margin: 30px 30px;
+  padding: 0 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.feed {
+  flex: 1;
+}
+
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.feed h2 {
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding-bottom: 8px;
+}
+
+.post-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.post-title {
+  margin: 0 0 8px;
+  color: #222;
+}
+
+.post-info {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.post-desc {
+  color: #444;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: none; /*无下划线*/
+  font-weight: bold;
+}
+
+.read-more:hover {
+  color: #666;
+}
+
+/* ========== 侧边栏组件widget ========== */
+.widget {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.widget h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+.widget ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.widget li {
+  margin: 8px 0;
+}
+
+.widget a {
+  color: #333;
+  text-decoration: none;
+}
+
+.widget a:hover {
+  text-decoration: underline;
+}
+
+/* ========== 个人文章界面 ========== */
+.article-content {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+.article-content h2 {
+  border-bottom: 1px solid #c61414; /*红色底边*/
+  padding-bottom: 10px;
+  margin-bottom: 16px;
+}
+
+/* 留言区域样式 */
+.comment-area {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+.comment-form h3 {
+  margin-bottom: 12px;
+}
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.comment-form textarea {
+  min-height: 100px;
+  resize: vertical; /*垂直拉伸*/
+}
+.comment-form button {
+  padding: 8px 20px;
+  background: #565252;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.comment-form button:hover {
+  background: #706b6b;
+}
