@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>个人博客注册页</title>
+    <link rel="icon" href="../lab1_2/icon.ico" />
+    <link rel="stylesheet" href="../lab1_2/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./control.js"></script>
+  </head>
+  <body>
+    <header class="head">
+      <h1>个人博客</h1>
+      <button class="skin-btn" id="skinBtn">夜间模式</button>
+    </header>
+    <main>
+      <h2 style="text-align: center; margin: 30px 0 10px">注册</h2>
+      <form class="form" id="regForm" action="URL" method="post" name="注册">
+        <label>用户名:<input type="text" name="name" id="username" /></label>
+        <span class="tip" id="tipUser"></span>
+        <div class="sex">
+          性别:
+          <label><input type="radio" name="sex" value="男" /> 男</label>
+          <label><input type="radio" name="sex" value="女" /> 女</label>
+        </div>
+        <span class="tip"></span>
+        <label>邮箱:<input type="email" name="email" id="email" /></label>
+        <span class="tip" id="tipEmail"></span>
+        <label>密码:<input type="password" name="pwd" id="pwd" /></label>
+        <span class="tip" id="tipPwd"></span>
+        <label
+          >确认密码:<input type="password" name="repwd" id="repwd"
+        /></label>
+        <span class="tip" id="tipRepwd"></span>
+        <input type="submit" value="注册账号" />
+      </form>
+    </main>
+  </body>
+</html>
