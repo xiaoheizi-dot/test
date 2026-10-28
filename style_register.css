@@ -7,7 +7,11 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f5f5f5;
-  transition: 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+main h2 {
+  margin: 30px 0 10px;
+  text-align: center;
 }
 body.night {
   background-color: #222;
@@ -42,7 +46,6 @@ body.night {
   margin: 0 auto;
   border: 1px solid purple;
   border-radius: 10px;
-  box-sizing: border-box;
   gap: 15px;
 }
 body.night .form {
@@ -60,7 +63,6 @@ body.night .form {
 .form input[type="password"] {
   flex: 1;
   padding: 8px 10px;
-  box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
 }

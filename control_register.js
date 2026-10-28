@@ -109,7 +109,7 @@ window.onload = function () {
       alert("请根据提示修改错误项后再提交");
       return;
     }
-    const sexVal = document.querySelector(`input[name="sex"]:checked`);
+    const sexVal = document.querySelector('input[name="sex"]:checked');
     if (!sexVal) {
       alert("请选择性别");
       return;
@@ -118,7 +118,7 @@ window.onload = function () {
       username: username.value.trim(),
       email: email.value.trim(),
       pwd: pwd.value.trim(),
-      sex: document.querySelector('input[name="sex"]:checked')?.value,
+      sex: sexVal.value,
     };
     console.log("注册成功，收集到的数据：", data);
     alert("注册成功！");

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,42 +7,46 @@
     <link rel="icon" href="icon.ico" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="base.css" />
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style_main.css" />
   </head>
   <body>
     <header class="container-head">
       <nav>
         <h1>个人博客</h1>
-        <a href="主页.html">首页</a>
+        <a href="main.html">首页</a>
         <a href="#">文章</a>
         <a href="#">留言</a>
         <a href="#">站外链接</a>
         <a href="#">关于我</a>
         <button class="skin-btn" id="skinBtn">夜间模式</button>
         <div class="avatar-box">
-      <img src="/image\ColoredGlaze02-Dark.jpg" alt="头像">
-    </div>
+          <img src="../image/ColoredGlaze02-Dark.jpg" alt="头像" />
+        </div>
       </nav>
     </header>
 
     <main class="container-layout">
       <section class="feed">
         <!-- 文章正文 -->
-        <div class="article-content">
-          <h2>第一篇博客文章</h2>
-          <div class="post-info">发布时间：2026‑10‑14</div>
-          <p>正文内容。</p>
-        </div>
+        <div class="article-content"></div>
         <!-- 留言栏 -->
         <div class="comment-area">
-                    <div class="comment-form">
-                        <h3>发表留言</h3>
-                        <input type="text" placeholder="请输入你的昵称">
-                        <textarea placeholder="请输入留言内容"></textarea>
-                        <button>提交留言</button>
-                    </div>
-                </div>
-            </div>
+          <div class="comment-form">
+            <form action="" method="get" id="commentForm">
+              <h3>发表留言</h3>
+              <input type="text" id="nickname" placeholder="请输入你的昵称" />
+              <textarea
+                id="commentContent"
+                placeholder="请输入留言内容"
+              ></textarea>
+              <button type="submit">提交留言</button>
+            </form>
+          </div>
+          <!-- 留言数量 -->
+          <h4 id="msgTotal"></h4>
+          <!-- 留言列表 -->
+          <ul id="msgList"></ul>
+        </div>
       </section>
       <!-- 侧边栏 -->
       <aside class="sidebar">
@@ -51,7 +55,7 @@
           <p>前端爱好者，记录学习日常。</p>
         </div>
         <div class="widget">
-          <h3>文章分类</h3> 
+          <h3>文章分类</h3>
           <ul>
             <li><a href="#">HTML/CSS</a></li>
             <li><a href="#">JavaScript</a></li>
@@ -59,14 +63,8 @@
           </ul>
         </div>
       </aside>
-    </main> 
-    <script>
-      skinBtn.addEventListener("click", () => {
-        document.body.classList.toggle("night");
-        skinBtn.textContent = document.body.classList.contains("night")
-          ? "白天模式"
-          : "夜间模式";
-      });
-    </script>
+    </main>
+    <script src="data.js"></script>
+    <script src="render.js"></script>
   </body>
 </html>

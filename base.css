@@ -2,9 +2,9 @@
 body {
   color: #273534;
   background-color: #f5f3ef;
-  font-family: sans-serif, "雅黑";
-  font-size: 16px; /*字体大小*/
-  line-height: 1.8; /*行高*/
+  font-family: "Microsoft YaHei", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
 }
 
 h1 {
